@@ -1,0 +1,14 @@
+<section class="news xs:ptb-30">
+    <div class="container">
+        <div class="news-wrapper xs:flex-column md:flex-row md:flex-wrap">
+            <div *ngFor="let item of news" class="news-item xs:col-24 md:col-12 xs:flex-column xs:flex-justify-start xs:flex-align-start xs:mtb-15 md:plr-20">
+                <h2 class="title">{{ item.title }}</h2>
+                <a [href]="item.imageUrl" class="fancybox xs:w-100 md:w-auto" data-fancybox="news">
+                    <img [src]="item.thumbnailUrl" alt="" class="img-fluid xs:mtb-10">
+                </a>
+                <p *ngFor="let p of item.text" class="subtitle xs:mb-5 xs:text-justify">{{ p }}</p>
+                <a [href]="item.linkUrl" class="btn xs:mt-10">{{ item.linkText }}</a>
+            </div>
+        </div>
+    </div>
+</section>

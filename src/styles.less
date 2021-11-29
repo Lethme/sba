@@ -1,1 +1,124 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-brown: #382916;
+    --color-orange: #EFA118;
+    --color-beige: #62593F;
+    --color-gray: #363D42;
+    --color-lightbrown: #8F6441;
+    --color-superlightbrown: #925C14;
+    --color-supermegaultralightbrown: #D79235;
+    --color-darkbrown: #412905;
+    --color-darkorange: #D85D17;
+    --color-darkred: #B33310;
+    --color-darkyellow: #F0A31F;
+    --shadow-box: .2rem .2rem .1rem rgba(0, 0, 0, .4);
+    --shadow-text: .2rem .2rem .1rem rgba(0, 0, 0, .4);
+    --shadow-img: drop-shadow(.2rem .2rem .1rem rgba(0, 0, 0, 0.4));
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: .4rem 1.3rem;
+    background: var(--color-brown) !important;
+    color: var(--color-white) !important;
+    border: 2px solid var(--color-lightbrown) !important;
+    border-radius: .4rem !important;
+    box-shadow: inset 0px 15px 30px -10px rgba(255, 255, 255, .15), inset 0px -15px 30px -10px rgba(0, 0, 0, 1), 0px 15px 10px -15px rgba(0, 0, 0, .4) !important;
+    transition: all .1s linear !important;
+}
+
+.btn:hover,
+.btn:active {
+    color: var(--color-orange) !important;
+    box-shadow: inset 0px 15px 30px -10px rgba(255, 255, 255, .15), inset 0px -15px 30px -10px rgba(0, 0, 0, 1), 0px 15px 10px -15px rgba(0, 0, 0, .4) !important;
+}
+
+.btn:focus {
+    box-shadow: inset 0px 15px 30px -10px rgba(255, 255, 255, .15), inset 0px -15px 30px -10px rgba(0, 0, 0, 1), 0px 15px 10px -15px rgba(0, 0, 0, .4);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+.link:hover,
+.link:active {
+    color: var(--color-orange);
+}
+
+.title {
+    color: var(--color-white);
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+h1.title {
+    font-size: 40px;
+}
+
+h2.title {
+    font-size: 24px;
+}
+
+h3.title {
+    font-size: 16px;
+}
+
+h4.title {
+    font-size: 14px;
+}
+
+h5.title {
+    font-size: 12px;
+}
+
+h6.title {
+    font-size: 10px;
+}
+
+p.text {
+    color: var(--color-white);
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+ul.list {
+    padding: 0;
+}
+
+ul.list li.list-item {
+    color: var(--color-white);
+    font-size: 16px;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 991px) {
+    .btn-fluid {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {}

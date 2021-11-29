@@ -1,0 +1,9 @@
+.news {
+  background: var(--color-darkbrown);
+}
+.news .subtitle {
+  color: var(--color-supermegaultralightbrown);
+}
+.news .title {
+  color: var(--color-white);
+}

@@ -1,0 +1,39 @@
+.main {
+  background: var(--color-darkbrown);
+}
+.main .wrapper .inner-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main .wrapper .inner-wrapper:nth-child(1) {
+  background: linear-gradient(90deg, #B33310 33.33333%, rgba(0, 0, 0, 0) 33.33333%), linear-gradient(90deg, #D85D17 66.66666%, #F0A31F 66.66666%);
+}
+.main .wrapper .inner-wrapper .inner-block {
+  padding: 30px;
+}
+.main .wrapper .inner-wrapper .inner-block .subtitle {
+  color: var(--color-superlightbrown);
+}
+.main .wrapper .inner-wrapper .inner-block .suptitle {
+  color: var(--color-supermegaultralightbrown);
+}
+.main .wrapper .inner-wrapper .inner-block .link.suptitle:hover {
+  color: var(--color-superlightbrown);
+}
+/* .main .wrapper .inner-wrapper .inner-block.about { background: var(--color-darkred); }
+.main .wrapper .inner-wrapper .inner-block.services { background: var(--color-darkorange); }
+.main .wrapper .inner-wrapper .inner-block.news { background: var(--color-darkyellow); } */
+@media screen and (max-width: 991px) {
+  .main .wrapper .inner-wrapper:nth-child(1) {
+    background: none;
+  }
+  .main .wrapper .inner-wrapper:nth-child(1) .inner-block:nth-child(1) {
+    background: #B33310;
+  }
+  .main .wrapper .inner-wrapper:nth-child(1) .inner-block:nth-child(2) {
+    background: #D85D17;
+  }
+  .main .wrapper .inner-wrapper:nth-child(1) .inner-block:nth-child(3) {
+    background: #F0A31F;
+  }
+}

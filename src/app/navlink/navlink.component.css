@@ -1,0 +1,21 @@
+.nav-link {
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.8em 1.5em !important;
+  transition: all 0.2s linear;
+}
+.nav-link:hover {
+  color: var(--color-orange) !important;
+}
+.nav-item {
+  background: transparent;
+  transition: all 0.2s linear;
+}
+.nav-item.active {
+  background: var(--color-orange);
+  box-shadow: inset 0px 15px 30px -10px rgba(255, 255, 255, 0.15), inset 0px -15px 30px -10px rgba(0, 0, 0, 0.6), 15px 0px 10px -15px rgba(0, 0, 0, 0.8), -15px 0px 10px -15px rgba(0, 0, 0, 0.8), 0px 15px 10px -15px rgba(0, 0, 0, 0.4);
+}
+.nav-item.active > .nav-link {
+  color: var(--color-black) !important;
+}

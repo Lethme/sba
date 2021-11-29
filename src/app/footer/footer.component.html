@@ -1,0 +1,33 @@
+<footer class="footer lg:text-start">
+    <div class="container">
+        <div class="footer-wrapper xs:flex-column lg:flex-row">
+            <div class="form xs:col-24 lg:col-12 xs:pr-0 lg:pr-20">
+                <h5 class="title">Sign-Up for the NewsLetter</h5>
+                <form (submit)="singUp()" class="xs:flex-column lg:flex-row">
+                    <input type="email" name="email" [(ngModel)]="email" class="input-field xs:ptb-5 lg:ptb-0">
+                    <button type="submit" class="btn xs:mt-15 lg:mt-0 lg:ml-15">Submit</button>
+                </form>
+            </div>
+            <div class="contacts xs:col-24 lg:col-8 xl:col-6 xs:pr-0 lg:pr-20 xs:mt-20 lg:mt-0">
+                <h5 class="title">Contact us</h5>
+                <div class="text">Freephone: <a class="link contact-link tel" href="tel:+18005596580">+1 800 559 6580</a>
+                </div>
+                <div class="text">Telephone: <a class="link contact-link tel" href="tel:+19596036035">+1 959 603 6035</a>
+                </div>
+            </div>
+            <div class="social xs:col-24 lg:col-4 xl:col-6 xs:mt-20 lg:mt-0">
+                <h5 class="title">Follow us</h5>
+                <div class="social-wrapper xs:flex-row xs:flex-justify-start xs:flex-wrap">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="sm-link rss"></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="sm-link tumblr"></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="sm-link facebook"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-wrapper xs:flex-row">
+            <div class="copyright xs:text-center xs:pt-30 xs:col-24">
+                <p class="text">Company &#169; 2014 | <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="link privacy">PRIVACY POLICY</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
