@@ -30,7 +30,7 @@ export interface HtmlLink {
 
 export const links: Array<Link> = [
   { route: '', text: "Home", type: LinkType.AppLink, component: HomeComponent },
-  { route: 'company', text: "Company", type: LinkType.AppLink, component: CompanyComponent },
+  { route: 'cumpany', text: "Cumpany", type: LinkType.AppLink, component: CompanyComponent },
   { route: 'services', text: "Services", type: LinkType.AppLink, component: ServicesComponent },
   { route: 'news', text: "News", type: LinkType.AppLink, component: NewsComponent },
   { route: 'clients', text: "Clients", type: LinkType.AppLink, component: ClientsComponent },
